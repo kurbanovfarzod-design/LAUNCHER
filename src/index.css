@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-medical-cyan: #00BCD4;
+  --color-hospital-bg: #F0F4F8;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-[#2D3748] bg-[--color-hospital-bg];
+  }
+}
+
+.medical-cyan-glow {
+  box-shadow: 0 0 30px rgba(0, 188, 212, 0.4), 0 0 15px rgba(0, 188, 212, 0.2);
+  border: 3px solid #00BCD4 !important;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
